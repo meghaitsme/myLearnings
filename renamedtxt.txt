@@ -1,0 +1,49 @@
+What is Git ?
+Git is a distributed version control system
+used to track the source code 
+track the chages in the source code
+
+when multiple developers works on same project simulatneously 
+while keep track of every changes.
+
+what is github?
+is a platform allows to host git repository (folder), where all changes are saved.
+note :- red in color :- line is deleted
+green in color :- line is added
+
+
+linux commands :-
+ls -> list all the folders names available in the folder drive
+mkdir -> create your own folder
+eg :- created 2 folder folder1,folder2
+u r in folder2
+
+use :- cd folder1
+
+all history r saved in git repository. (git .git) there files are hidden 
+
+u r in .git folder:-  ls .git ==> list all the hidden folders in the git repo
+
+==>   touch filename.txt  => creates new editor file in the folder
+(u have added. but others dont know.,they are said to be untracked.)
+
+git status   (untracked message will be displayed)
+
+so, git add .    -> . will add all the untracked files.
+    git add fn.txt -> add only that file.
+
+    still u r not commited 
+
+    git commit -m " fn.txt file is added and commited , -m is to say some message"
+
+git status :- tracked .
+
+   =>   vi fn.txt => opens an editor, now u r writting in editor 
+ to come back :-  press esc button, type :wq 
+
+
+
+
+
+
+

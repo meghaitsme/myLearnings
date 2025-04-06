@@ -1,0 +1,13 @@
+press i for insert mode 
+
+
+
+git stash 
+git stash pop
+git stash clear 
+
+
+:w-> save 
+:q -> quit
+
+:wq -> save and quit

@@ -1,0 +1,370 @@
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop
+$ ls
+'Eclipse IDE for Java Developers - 2024-09.lnk'*   Programs.docx
+ Fixeddepositcalculator.xlsx                       SearchItems.xlsx
+'Github setconfig'/                               'TestNg read this.pdf'
+'Java selenium interview preparation.txt'         'WPS Office.lnk'*
+'Kmegha - Chrome.lnk'*                            'WPS PDF.lnk'*
+'Microsoft Edge.lnk'*                              desktop.ini
+ Postman.lnk*                                      project/
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop
+$ mkdir project1
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop
+$ ls
+'Eclipse IDE for Java Developers - 2024-09.lnk'*   SearchItems.xlsx
+ Fixeddepositcalculator.xlsx                      'TestNg read this.pdf'
+'Github setconfig'/                               'WPS Office.lnk'*
+'Java selenium interview preparation.txt'         'WPS PDF.lnk'*
+'Kmegha - Chrome.lnk'*                             desktop.ini
+'Microsoft Edge.lnk'*                              project/
+ Postman.lnk*                                      project1/
+ Programs.docx
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop
+$ cd project
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ ls
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ touch createnewtxtfile.txt
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        createnewtxtfile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git add .
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   createnewtxtfile.txt
+
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ touch secondfile.txt
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ touch thridfile.txt
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   createnewtxtfile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        secondfile.txt
+        thridfile.txt
+
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git add secondfile.txt
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   createnewtxtfile.txt
+        new file:   secondfile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        thridfile.txt
+
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git commit -m "createnewtxtfile.txt file is added"
+[master (root-commit) cbeeaeb] createnewtxtfile.txt file is added
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 createnewtxtfile.txt
+ create mode 100644 secondfile.txt
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git commit -m "secondfile.txt file is added"
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        thridfile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git add thirdfile.txt
+fatal: pathspec 'thirdfile.txt' did not match any files
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        thridfile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git add thirdfile.txt
+fatal: pathspec 'thirdfile.txt' did not match any files
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config advice.addEmptyPathspec false"
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ cat createnewtxtfile.txt
+What is Git ?
+Git is a distributed version control system
+used to track the source code
+track the chages in the source code
+
+when multiple developers works on same project simulatneously
+while keep track of every changes.
+
+what is github?
+is a platform allows to host git repository (folder), where all changes are saved.
+note :- red in color :- line is deleted
+green in color :- line is added
+
+
+linux commands :-
+ls -> list all the folders names available in the folder drive
+mkdir -> create your own folder
+eg :- created 2 folder folder1,folder2
+u r in folder2
+
+use :- cd folder1
+
+all history r saved in git repository. (git .git) there files are hidden
+
+u r in .git folder:-  ls .git ==> list all the hidden folders in the git repo
+
+==>   touch filename.txt  => creates new editor file in the folder
+(u have added. but others dont know.,they are said to be untracked.)
+
+git status   (untracked message will be displayed)
+
+so, git add .    -> . will add all the untracked files.
+    git add fn.txt -> add only that file.
+
+    still u r not commited
+
+    git commit -m " fn.txt file is added and commited , -m is to say some message"
+
+git status :- tracked .
+
+   =>   vi fn.txt => opens an editor, now u r writting in editor
+ to come back :-  press esc button, type :wq
+
+
+
+
+
+
+
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ get add .
+bash: get: command not found
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ get add createnewtxtfile.txt
+bash: get: command not found
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ ^C
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ get add createnewtxtfile.txt
+bash: get: command not found
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ get status
+bash: get: command not found
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ ^C
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git add Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ get status
+bash: get: command not found
+bash: syntax error near unexpected token `('
+bash: $: command not found
+bash: bash:: command not found
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git add createnewtxtfile.txt
+warning: in the working copy of 'createnewtxtfile.txt', LF will be replaced by CRLF the next time Git touches it
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   createnewtxtfile.txt
+
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git restore --staged createnewtxtfile.txt
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   createnewtxtfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git add createnewtxtfile.txt
+warning: in the working copy of 'createnewtxtfile.txt', LF will be replaced by CRLF the next time Git touches it
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git remove --staged createnewtxtfile.txt
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git restore --staged createnewtxtfile.txt
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   createnewtxtfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git add createnewtxtfile.txt
+warning: in the working copy of 'createnewtxtfile.txt', LF will be replaced by CRLF the next time Git touches it
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git commit -m "createnewtxtfile.txt is added and commited"
+[master d52cbd6] createnewtxtfile.txt is added and commited
+ 1 file changed, 49 insertions(+)
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git log
+commit d52cbd6e8aa3f8089975af250ad349474629fa36 (HEAD -> master)
+Author: meghaitsme <meghak.krish@gmail.com>
+Date:   Sun Apr 6 21:10:19 2025 +0530
+
+    createnewtxtfile.txt is added and commited
+
+commit 979973916d6801b681090b90ef76389a848db8dd
+Author: meghaitsme <meghak.krish@gmail.com>
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$
+    thirdfile.txt file is added and commiting
+
+commit cbeeaebf1357e5dca1a97b7e4d61bcfa4b778d8e
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ te:   Sun Apr 6 19:54:36 2025 +0530
+
+    createnewtxtfile.txt file is added
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ gha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ cd project1
+bash: cd: project1: No such file or directory
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ gha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ gha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ touch fourthfile.docx
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ vi fourthfile.docx
+
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$
+
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ mv createnewtxtfile.txt renamedtxt.txt
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    createnewtxtfile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        fourthfile.docx
+        renamedtxt.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git add renamedtxt.txt
+warning: in the working copy of 'renamedtxt.txt', LF will be replaced by CRLF the next time Git touches it
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git commit -m "renamed.txt createnewtxtfile.txt renamefile.txt"
+[master 5988de5] renamed.txt createnewtxtfile.txt renamefile.txt
+ 1 file changed, 49 insertions(+)
+ create mode 100644 renamedtxt.txt
+
+Megha K@DESKTOP-5VBKCKK MINGW32 ~/OneDrive/Desktop/project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    createnewtxtfile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        fourthfile.docx
+
+no changes added to commit (use "git add" and/or "git commit -a")
